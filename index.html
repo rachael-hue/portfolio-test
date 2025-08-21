@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyLogo</div>
+    <ul class="menu">
+      <li><a href="#intro" class="active">Home</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="intro" id="intro">
+    <div class="intro-content">
+      <h1>Your Name</h1>
+      <h2>Designation</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#" class="btn outline" download>Download CV</a>
+      </div>
+    </div>
+    <svg class="intro-bg" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="url(#paint0_linear)" d="M0 0h800v200H0z"/>
+      <defs>
+        <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="200" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#232336"/>
+          <stop offset="1" stop-color="#181824"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </section>
+
+  <section class="profile" id="profile">
+    <div class="profile-centered">
+      <div class="profile-img-centered">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Image"/>
+      </div>
+      <div class="profile-text-centered">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae purus at urna dictum porttitor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="category-buttons">
+      <button class="cat-btn active" data-category="dev">Web Development</button>
+      <button class="cat-btn" data-category="ui">UI/UX Design</button>
+      <button class="cat-btn" data-category="data">Data Analytics</button>
+    </div>
+    <div class="skills-list" id="skills-list"></div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-category-buttons">
+      <button class="proj-btn active" data-category="all">All</button>
+      <button class="proj-btn" data-category="dev">Web Development</button>
+      <button class="proj-btn" data-category="data">Data Analytics</button>
+      <button class="proj-btn" data-category="ui">UI/UX Design</button>
+    </div>
+    <div class="projects-list" id="projects-list"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" autocomplete="off">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#" title="GitHub"><img src="assets/github.svg" alt="GitHub"/></a>
+      <a href="#" title="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn"/></a>
+      <a href="#" title="Behance"><img src="assets/behance.svg" alt="Behance"/></a>
+    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
